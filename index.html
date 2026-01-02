@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Silk Kcal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              avocado: {
+                50: '#f7fee7',
+                100: '#ecfccb',
+                200: '#d9f99d',
+                300: '#bef264',
+                400: '#a3e635',
+                500: '#84cc16', // Primary
+                600: '#65a30d',
+                700: '#4d7c0f',
+                800: '#3f6212',
+                900: '#365314',
+              },
+              warm: {
+                50: '#fafaf9', // Stone 50
+                100: '#f5f5f4',
+                900: '#1c1917',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIlNpbGsgS2NhbCIsCiAgInNob3J0X25hbWUiOiAiU2lsayBLY2FsIiwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmYWZhZjkiLAogICJ0aGVtZV9jb2xvciIjogIiM4NGNjMTYiLAogICJpY29ucyI6IFtdCn0=" />
+    <style>
+      body {
+        background-color: #fafaf9; /* warm-50 */
+        color: #1c1917; /* warm-900 */
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* Hide scrollbar for clean UI */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

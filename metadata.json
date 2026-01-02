@@ -1,0 +1,7 @@
+{
+  "name": "Silk Kcal",
+  "description": "一款个人健康助手 PWA，具有 AI 驱动的食物追踪、膳食计划和健康监测功能，界面清新。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
